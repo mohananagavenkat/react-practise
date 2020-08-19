@@ -1,0 +1,31 @@
+
+.loader{
+    width:40px;
+    height: 40px;
+    border-style: solid;
+    border-width:4px;
+    border-color:green green transparent;
+    border-radius: 50%;
+    animation: spin 1s ease-in-out infinite, colorChange 1.5s infinite;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes colorChange{
+    0%{
+        border-color: green green transparent;
+    }
+    50%{
+        border-color: blue blue transparent;
+    }
+    100%{
+        border-color: red red transparent;
+    }
+}
