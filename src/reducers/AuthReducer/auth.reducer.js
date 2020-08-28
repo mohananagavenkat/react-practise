@@ -9,7 +9,7 @@ import {
   PROFILE_SUCCESS,
   PROFILE_FAILED,
   LOGOUT
-} from '../config/types';
+} from '../../config/types';
 
 const defaultState = {
   isAuthenticated: false,
@@ -17,7 +17,7 @@ const defaultState = {
   user: null,
   errors: null
 }
-export default function authReducer(state = defaultState, action) {
+export default function authReducer(state = defaultState, action = {}) {
   const { type, payload } = action;
   switch (type) {
     case SIGNUP_START:

@@ -10,7 +10,7 @@ import { connect } from 'react-redux';
 import { getProfile } from '../actions/auth.action'
 import Cart from '../components/Cart';
 import Logout from '../components/Logout';
-import SecuredRoot from '../components/SecuredRott';
+import SecuredRoot from '../components/SecuredRoot';
 
 class RootPage extends Component {
 
