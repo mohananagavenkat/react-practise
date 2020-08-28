@@ -8,7 +8,7 @@ cache:
 dist: trusty
 script:
   - npm test
-  - CI=false npm run build
+  - npm run build
 notifications:
   email:
     on_success: change
