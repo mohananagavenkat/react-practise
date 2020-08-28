@@ -7,7 +7,7 @@ cache:
     - node_modules
 dist: trusty
 script:
-  - CI=false npm test
+  - npm test
   - CI=false npm run build
 notifications:
   email:
