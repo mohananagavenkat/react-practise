@@ -1,9 +1,15 @@
+warnings_are_errors: false
 language: node_js
 node_js:
   - "stable"
 cache:
   directories:
     - node_modules
+dist: trusty
 script:
   - npm test
   - npm run build
+notifications:
+  email:
+    on_success: change
+    on_failure: change
